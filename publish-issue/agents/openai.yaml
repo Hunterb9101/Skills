@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish Issue"
+  short_description: "Turn rough ideas into actionable issue tickets"
+  default_prompt: "Use $publish-issue to formalize this rough issue idea into a concise GitHub ticket."
