@@ -28,7 +28,8 @@ Turn an informal issue idea into a ticket with clear context, acceptance criteri
 
 2. Gather minimal evidence.
    - Use local files, logs, test output, GitHub context, or user notes when available.
-   - Prefer concrete references: file paths, commands, versions, observed behavior, metrics, screenshots, or related tickets.
+   - Prefer concrete references: stable GitHub links, commands, versions, observed behavior, metrics, screenshots, or related tickets.
+   - Convert local file references into GitHub permalinks before publishing whenever the repository and commit or branch are known.
    - Do not invent impact, root cause, labels, assignees, milestones, or implementation details.
 
 3. Draft the ticket.
@@ -76,7 +77,7 @@ Good problem statements:
 Give the future agent enough orientation to start in the right place.
 
 Include whichever details are relevant:
-- Repository, package, module, or file paths.
+- Repository, package, module, or stable GitHub file links.
 - Commands, configs, versions, dependency names, branches, or environment.
 - Error messages, failing tests, metrics, screenshots, or logs.
 - Related issues, PRs, experiments, notebooks, or user notes.
@@ -195,5 +196,5 @@ Add references that are useful but not required for the main flow. Keep this sec
 - Confirm before publishing when the draft was created in the same turn.
 - Never publish to an ambiguous repository.
 - Do not apply labels, milestones, or assignees unless the user requested them or they are clearly established by repo convention.
-- If the issue body depends on local evidence, include file paths and command names but avoid dumping long logs.
+- If the issue body depends on local code evidence, use stable GitHub links to files, lines, commits, PRs, or issues. Use local paths only in drafts or when no GitHub source is available.
 - Prefer explicit acceptance criteria and source references over broad implementation prose.
