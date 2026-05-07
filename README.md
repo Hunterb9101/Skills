@@ -1,6 +1,6 @@
 # HunterB9101 / Skills
 
-# Background
+## Background
 Over the past few months, I've been working on integrating AI into my development workflow, trying various concepts such as a Research/Plan/Implement workflow, 100% vibe-coded approaches, or as a HITL process.
 
 While I have seen some success in the area, there have been a number of roadblocks that have limited my use of the tool:
@@ -10,20 +10,20 @@ While I have seen some success in the area, there have been a number of roadbloc
 
 In order to solve both problems, I've created a small repository to house my personal AI skills. This will help enable consistency across the different places that I use the skills, and hopefully lead to the development of a tighter improvement loop of agentic processes.
 
-# Skills
+## Skills
 
-## Contribute-Python
+### Contribute-Python
 
-### What
+#### What
 
 Writes Python in a way that mirrors how I write it.
 
-### Why
+#### Why
 
 When I've used codex in the past to implement a feature, there have been a couple of friction points:
 1. Nearly every project I work on needs a specialized virtual environment to run properly. Codex consistently attempts to run python with the default interpreter, and then does one of two things. It either burns a ton of tokens to figure out there is a venv it can use and activates it, or it attempts to install a bunch of packages globally. Both of which burn a ton of tokens.
 2. Out of the box, I expect a certain level of separation of concerns. I don't want configuration values driving behavior deep in library, I/O where it isn't necessary, nor extensive validation at every step. It makes it hard to test behaviors, and harder to follow. However, I commonly forget to mention this when prompting, and I end up with a feature that decreases the readability of the codebase with a bunch of odd behaviors.
 3. Codex _loves_ writing a bunch of code for reverse compatibility, and most of the time I am writing experimental Data Science code. This leads to a disconnect where I expect some functionality to be adjusted/removed, but we end up adding a bunch of bloat to support both paths, hindering readability.
 
-# Resources
+## Resources
 - [What is a skill?](https://openai.com/academy/skills/)
